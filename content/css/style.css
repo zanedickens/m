@@ -1,0 +1,326 @@
+/*==========================
+
+		CONTENTS
+
++==========================*/
+
+
+/*
+
+1. ng-cloak
+2. General
+3. Colours
+4. Sidebar
+5. Header
+6. Content
+7. Shadows
+8. Hovers / Transitions
+9. Spacers
+10. Media Queries
+
+*/
+
+
+/* Help avoid ng-cloak "flash of unstyled / empty content" */
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+	display: none !important;
+}
+
+
+/* GENERAL */
+
+html {
+	font-size: 14px;
+}
+
+body {
+	color: #666;
+	background: #f2f2f2;
+}
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 300;
+}
+
+h1 {
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+/* SIDEBAR */
+
+.logo {
+	padding: 20px;
+	background: white;
+	margin: 0 -20px;
+	height: 76px;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 1px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+	max-height: 45px;
+	margin: 0 auto;
+}
+
+.sidebar {
+	background: #f2f2f2;
+	border-right: 1px solid #eee;
+}
+
+.sidebar-menu li {
+	display: block;
+	padding: 20px;
+}
+
+.sidebar-menu li:hover {
+	color: #019B36;
+	cursor: pointer;
+}
+
+.sidebar-menu {
+	padding-left: 0;
+	margin: 30px -20px;
+}
+
+.sidebar-footer {
+	position: absolute;
+	bottom: 0;
+}
+
+.sidebar-footer p {
+	text-align: center;
+	font-size: 10px;
+}
+
+
+/* hide on mobile */
+
+.sidebar-menu,
+.sidebar-footer {
+	display: none;
+}
+
+
+/* HEADER */
+
+.search {
+	padding: 20px;
+	background: #f3f3f3;
+	border-bottom: 1px solid #fff;
+	height: 75px;
+}
+
+.search input {
+	width: 100%;
+	border-radius: 0;
+}
+
+
+/* 6. CONTENT */
+
+.content-area {
+	background: radial-gradient(circle at 48.36% 44.67%, #a4bb73, transparent 97%), radial-gradient(circle at 83.13% 74.41%, #65745d, transparent 99%), radial-gradient(circle at 24.45% 77.51%, #5d6371, transparent 100%), radial-gradient(circle at 50% 50%, #e6ffe3, #e6ffe3 100%);
+	min-height: 100vh;
+	height: 100%;
+	transition: all 0.5s ease;
+}
+
+.patient-record {
+	margin: 20px -20px;
+	background: #f2f2f2;
+	border: 1px solid #f3f3f3;
+	border-radius: 3px;
+	border-bottom: 1px solid #fff;
+}
+
+.gender-icon {
+	float: left;
+}
+
+.gender-icon.Female,
+.gender-icon.Male {
+	width: 44px;
+	margin: 8px 20px 0 0;
+}
+
+
+/* Patient Record Top Navigation */
+
+ul.buttons {
+	width: 100%;
+	margin-bottom: 30px;
+	padding-left: 0;
+	height: 50px;
+}
+
+ul.buttons li {
+	display: block;
+	float: left;
+	padding: 20px;
+	width: 33.3333333333333333333%;
+	text-align: center;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+ul.buttons li:hover {
+	cursor: pointer;
+	color: #019B36;
+}
+
+ul.buttons.patient li:nth-of-type(1),
+ul.buttons.aid li:nth-of-type(2),
+ul.buttons.meds li:nth-of-type(3) {
+	background: #fff;
+	color: #019B36;
+}
+
+
+/* Medication Table */
+
+tr:first-of-type {
+	font-weight: bold;
+}
+
+td {
+	padding: 5px;
+}
+
+
+/* Patient / Medical Details */
+
+.details {
+	padding: 20px;
+}
+
+.details li {
+	display: block;
+	text-align: right;
+	padding: 5px;
+}
+
+.details li span {
+	text-align: left;
+	display: block;
+	float: left;
+	color: #999;
+}
+
+
+/* COLOURS */
+
+.grn {
+	color: #019B36;
+}
+
+
+/* logo green */
+
+.drk-grn {
+	color: #006322;
+}
+
+.white {
+	color: #fff;
+}
+
+
+/* SHADOWS */
+
+.search,
+.patient-record {
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* HOVERS / TRANSITIONS */
+
+.content-area,
+.sidebar-menu li,
+.sidebar-menu li:hover,
+ul.buttons li,
+ul.buttons li:hover {
+	transition: all .5s ease-in;
+}
+
+
+/* SPACERS */
+
+.margin-t-45 {
+	margin-top: 45px;
+}
+
+.margin-b-0 {
+	margin-bottom: 0px;
+}
+
+.pad-l-5 {
+	padding-left: 5px;
+}
+
+.pad-b-20 {
+	padding-bottom: 20px;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {
+	.patient-record {
+		margin: 20px 5px;
+	}
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+	.sidebar {
+		height: 100vh;
+	}
+	.sidebar-menu,
+	.sidebar-footer {
+		display: block;
+	}
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+	.content-area {
+		background: url(../img/trees-above.jpg) center center;
+		background-size: cover;
+		transition: all 0.5s ease;
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}

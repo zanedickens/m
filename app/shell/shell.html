@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="row">
+        <!-- Site Header -->
+        <div class="col-sm-12">
+            <div ng-include="'./app/shell/shell.header.html'"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Page Header -->
+        <div class="col-sm-12">
+            <div ng-include="'./app/shell/shell.page-header.html'"></div>
+        </div>
+    </div>
+
+    <div class="col-sm-9 content-area">
+        <!-- Content -->
+        <!-- For now this content is quite static, but in a more complex application a ui-view would be used in the shell below -->
+        <div ng-include="'app/shell/shell.content.html'"></div>
+    </div>
+</div>
+</div>
