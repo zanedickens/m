@@ -1,1 +1,0 @@
-/*! pages-boiler-plate - v1.0.0 - 2017-05-21 */$(function(){var a=$(".gallery");a.imagesLoaded(function(){b()});var b=function(){a.isotope({itemSelector:".gallery-item",percentPosition:!0,masonry:{columnWidth:".grid-sizer",gutter:0}})}});
