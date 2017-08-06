@@ -1,0 +1,18 @@
+/*------------------------------- 
+
+COLORS 
+
+-------------------------------*/
+
+.white,
+.jumbtron h1.white {
+    color: white !important;
+}
+
+.bg-radial-gradient {
+    background-image: radial-gradient(50% 113%, #67A8D6 43%, #3374B9 100%);
+}
+
+.hedaer.light {
+    background-color: #3374B9;
+}
