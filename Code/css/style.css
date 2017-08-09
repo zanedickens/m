@@ -1,0 +1,393 @@
+/*==========================
+
+		CONTENTS
+
++==========================*/
+
+
+/*
+
+1. ng-cloak
+2. Typography
+3. Colours
+4. Buttons
+5. Headers
+6. Content
+7. Shadows
+8. Hovers / Transitions
+9. Spacers
+10. Media Queries
+
+*/
+
+
+/* Help avoid ng-cloak "flash of unstyled / empty content" */
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+
+/************************* 
+
+2. TYPOGRAPHY 
+
+*************************/
+
+html {
+    font-size: 14px;
+}
+
+body {
+    color: #666;
+    background: #F2F2F2;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.618;
+}
+
+.text-lg {
+    font-size: 3rem;
+}
+
+.text-xl {
+    font-size: 4rem;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+
+/*
+
+2. COLOURS 
+
+*/
+
+.bg-white {
+    background: #fff;
+}
+
+.bg-lt-gry {
+    background: #f4f4f4;
+}
+
+.bg-lt-blue {
+    background: #478ECC;
+}
+
+.bg-drk-blue {
+    background: #215FA1;
+}
+
+.bg-purple {
+    background: #6C65CB;
+}
+
+.white {
+    color: #fff;
+}
+
+.lt-gry {
+    color: #ccc;
+}
+
+.lt-blue {
+    color: #478ECC;
+}
+
+.blue {
+    color: #0086FA;
+}
+
+
+/************************* 
+
+3. BUTTONS 
+
+*************************/
+
+.btn {
+    border-radius: 2px;
+}
+
+.btn-grn,
+.btn-grn:hover {
+    /* Rectangle 2: */
+    background: #94C440;
+    color: #FFF;
+}
+
+.btn-grn:hover {
+    background: #94C440;
+}
+
+
+/*************************
+
+4. HEADERS 
+
+*************************/
+
+nav {
+    background: #215FA1;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.30);
+    padding: 20px 0;
+}
+
+nav .btn-link {
+    color: #fff;
+}
+
+.nav.nav-pill li
+/* PAGE-HEADER */
+
+.page-header {
+    background: #FFFFFF;
+}
+
+.profile,
+.map {
+    height: 250px;
+    background: #fff;
+}
+
+.profile {
+    padding: 50px 20px;
+}
+
+.map {
+    background: url('../img/map.png') bottom left no-repeat;
+    background-size: cover;
+}
+
+.profile-img {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    border: 3px solid #C8C8C8;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 24px;
+    color: #505659;
+}
+
+.profile-title {
+    font-style: italic;
+    font-size: 18px;
+    color: #B3B3B3;
+}
+
+
+/* 6. CONTENT */
+
+.content-area {
+    background: radial-gradient(circle at 48.36% 44.67%, #a4bb73, transparent 97%), radial-gradient(circle at 83.13% 74.41%, #65745d, transparent 99%), radial-gradient(circle at 24.45% 77.51%, #5d6371, transparent 100%), radial-gradient(circle at 50% 50%, #e6ffe3, #e6ffe3 100%);
+    min-height: 100vh;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+.full-screen {
+    min-height: 100vh;
+}
+
+
+/* FORMS */
+
+.form-min-lt .form-control,
+.form-min-drk .form-control {
+    border-radius: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid #fff;
+}
+
+.form-min-drk .form-control {
+    border-bottom: 2px solid #333;
+}
+
+.form-min-lt .help-block {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* SHADOWS */
+
+.search,
+.patient-record {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* HOVERS / TRANSITIONS */
+
+a,
+a:hover,
+button,
+button:hover {
+    transition: all .5s ease-in;
+}
+
+
+/* FEATURES */
+
+.card {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-img--small {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    margin: 30px auto 20px auto;
+}
+
+.feature-name {
+    margin: 40px 0 0;
+    text-align: center;
+}
+
+.feature-text {
+    display: flex;
+}
+
+
+/* TESTIMONIALS */
+
+.testimonial {
+    margin: 40% 0;
+}
+
+img.hero {
+    margin: 30% 0;
+    height: 60vh;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 30px;
+}
+
+.footer-link {
+    color: #eee;
+    text-align: center;
+}
+
+.footer-link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+/* SPACERS */
+
+.lift-100 {
+    margin-top: -100px !important;
+}
+
+.margin-t-20vh {
+    margin-top: 20vh;
+}
+
+.margin-t-45 {
+    margin-top: 45px;
+}
+
+.margin-t-60 {
+    margin-top: 60px;
+}
+
+.margin-b-0 {
+    margin-bottom: 0px;
+}
+
+.pad-20 {
+    padding: 20px;
+}
+
+.pad-l-5 {
+    padding-left: 5px;
+}
+
+.pad-b-20 {
+    padding-bottom: 20px;
+}
+
+.pad-y-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.pad-y-60 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.pad-x-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
