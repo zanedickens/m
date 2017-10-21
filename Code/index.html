@@ -21,165 +21,38 @@
 </head>
 
 <body>
-    <div data-include="partials/nav.html"></div>
+    <nav class="container-fluid float-top">
+        <div class="row nav">
+            <a class="col-sm-6" href="index.html"> <img src="img/logo.png" alt="medapp logo white"> </a>
+            <div class="col-sm-6 text-right"> <a href="benefits.html">Benefits</a> <a href="contact.html">Contact</a> <a href="login.html">Login</a> </div>
+        </div>
+    </nav>
 
-    <!-- FEATURES -->
-    <div class="container-fluid full-screen bg-lt-gry">
+    <div class="container">
         <div class="row">
-            <div class="container">
+            <div class="col-sm-offset-2 col-sm-8">
+                <h2 class="display-1 text-center pad-y-60">Find the best doctor <br />in your area</h2>
+
                 <div class="row">
-                    <div class="col-sm-12 text-center pad-y-60">
-                        <h2>medapp solves your problems</h2>
-                        <p class="subtitle">
-                            We do it by giving you the features that you need. Every single piece fits together like a puzzle.
-                        </p>
-                    </div>
-                </div>
-                <!-- Feature Row 01 -->
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img class="feature-img--small" src="" alt="">
-                            <h4 class="feature-name">Feature Name 01</h4>
-                            <p class="feature-text pad-20">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum esse atque libero.
-                            </p>
-                        </div>
-                    </div>
+                    <div class="col-sm-offset-2 col-sm-8">
+                        <form name="search">
 
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img class="feature-img--small" src="" alt="">
-                            <h4 class="feature-name">Feature Name 02</h4>
-                            <p class="feature-text pad-20">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum esse atque libero.
-                            </p>
-                        </div>
-                    </div>
+                            <div class="form-group">
+                                <label for="doctor-or-service">Search by doctor's name or service</label>
+                                <input class="form-control" type="text" name="doctor-or-service" placholder="" value="">
+                                <small class="form-text">E.g. Dr John Hopkins or General Practitioner</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="doctor-or-service">Which city are you in?</label>
+                                <input class="form-control" type="text" name="city-name" placholder="" value="">
+                            </div>
 
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img class="feature-img--small" src="" alt="">
-                            <h4 class="feature-name">Feature Name 03</h4>
-                            <p class="feature-text pad-20">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum esse atque libero.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Feature Row 02 -->
-                <div class="row margin-t-45">
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img class="feature-img--small" src="" alt="">
-                            <h4 class="feature-name">Feature Name 04</h4>
-                            <p class="feature-text pad-20">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum esse atque libero.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img class="feature-img--small" src="" alt="">
-                            <h4 class="feature-name">Feature Name 05</h4>
-                            <p class="feature-text pad-20">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum esse atque libero.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img class="feature-img--small" src="" alt="">
-                            <h4 class="feature-name">Feature Name 06</h4>
-                            <p class="feature-text pad-20">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum esse atque libero.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Feature Block Button Row -->
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3">
-                        <div class="row pad-y-60">
-                            <div class="col-sm-6"><button class="btn btn-block btn-lg btn-secondary">Tell me more</button></div>
-                            <div class="col-sm-6"><button class="btn btn-block btn-lg btn-primary">List your practice</button></div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <!-- TESTIMONIAL -->
-    <div class="container-fluid full-screen bg-drk-blue white">
-        <div class="row">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center pad-y-60">
-                        <div class="testimonial">
-                            <h2 class="text-xl">you should use medapp</h2>
-                            <p class="subtitle">
-                                We do it by giving you the features that you need. Every single piece fits together like a puzzle.
-                            </p>
-                            <div class="stars"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- TESTIMONIAL -->
-    <div class="container-fluid full-screen bg-white">
-        <div class="row">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 pad-y-60">
-                        <img src="" alt="" class="hero">
-                    </div>
-                    <div class="col-lg-6 pad-y-60">
-                        <div class="testimonial">
-                            <h2 class="text-xl">you should use medapp</h2>
-                            <p class="subtitle">
-                                We do it by giving you the features that you need. Every single piece fits together like a puzzle.
-                            </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, quia, nisi. Saepe ut voluptatibus quod ipsa at, quis quidem sapiente, eum harum aliquid reprehenderit, incidunt tenetur dicta sequi dolore. Error?</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, quia, nisi. Saepe ut voluptatibus quod ipsa at, quis quidem sapiente, eum harum aliquid reprehenderit, incidunt tenetur dicta sequi dolore. Error?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid bg-drk-blue white">
-        <div class="row">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 pad-y-60">
-                        <img src="" alt="" class="hero">
-                    </div>
-                    <div class="col-lg-6 pad-y-60">
-                        <div class="testimonial">
-                            <h2 class="text-xl">you should use medapp</h2>
-                            <p class="subtitle">
-                                We do it by giving you the features that you need. Every single piece fits together like a puzzle.
-                            </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, quia, nisi. Saepe ut voluptatibus quod ipsa at, quis quidem sapiente, eum harum aliquid reprehenderit, incidunt tenetur dicta sequi dolore. Error?</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, quia, nisi. Saepe ut voluptatibus quod ipsa at, quis quidem sapiente, eum harum aliquid reprehenderit, incidunt tenetur dicta sequi dolore. Error?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div data-include="partials/footer.html"></div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
     </script>

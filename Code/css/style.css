@@ -44,9 +44,11 @@ html {
 }
 
 body {
-    color: #666;
-    background: #F2F2F2;
+    color: #5D707E;
     font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0;
+    background: #fff;
 }
 
 html,
@@ -59,14 +61,19 @@ h6 {
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 300;
     line-height: 1.618;
+    color: rgba(29, 56, 76, 0.80);
 }
 
-.text-lg {
-    font-size: 3rem;
+.display-1 {
+    font-size: 72px;
+    letter-spacing: 0;
+    line-height: 1;
 }
 
-.text-xl {
-    font-size: 4rem;
+.display-2 {
+    font-size: 60px;
+    color: rgb(29, 56, 76);
+    letter-spacing: 0;
 }
 
 .bold {
@@ -127,15 +134,13 @@ h6 {
     border-radius: 2px;
 }
 
-.btn-grn,
-.btn-grn:hover {
-    /* Rectangle 2: */
-    background: #94C440;
-    color: #FFF;
+a {
+    color: #0000ff;
+    cursor: pointer;
 }
 
-.btn-grn:hover {
-    background: #94C440;
+a:hover {
+    text-decoration: none;
 }
 
 
@@ -146,16 +151,17 @@ h6 {
 *************************/
 
 nav {
-    background: #215FA1;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.30);
     padding: 20px 0;
 }
 
-nav .btn-link {
-    color: #fff;
+nav a {
+    color: #1D384C;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px;
 }
 
-.nav.nav-pill li
+
 /* PAGE-HEADER */
 
 .page-header {
@@ -213,21 +219,10 @@ nav .btn-link {
 
 /* FORMS */
 
-.form-min-lt .form-control,
-.form-min-drk .form-control {
+.form-control {
     border-radius: 0;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    border-bottom: 2px solid #fff;
-}
-
-.form-min-drk .form-control {
-    border-bottom: 2px solid #333;
-}
-
-.form-min-lt .help-block {
-    color: rgba(255, 255, 255, 0.5);
+    height: 48px;
+    border: 1px solid #C8C8C8;
 }
 
 
@@ -331,6 +326,10 @@ footer {
 
 .margin-b-0 {
     margin-bottom: 0px;
+}
+
+.pad-10 {
+    padding: 10px;
 }
 
 .pad-20 {
